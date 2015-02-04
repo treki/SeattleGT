@@ -1,7 +1,7 @@
 #myAlbum{background-color: #333;}
 
 #myAlbum {
-	margin-top: 20px;
+	margin: 20px;
 }
 
 .carousel-caption {
@@ -9,7 +9,7 @@
 	text-align: left;
 }
 
-#myAlbum .item { height: 400px; }
+#myAlbum .item { height: 320px; }
 
 #album1 {
 	background: url('images/b/b1.jpg') top center no-repeat;
