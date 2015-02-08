@@ -1,9 +1,8 @@
 #myAlbum{background-color: #333;}
-#myAlbum {margin: 20px 20px 70px 0px;}
+#myAlbum {margin: 30px 30px 70px 0px;}
+.carousel-caption {font-size: 20px;	text-align: left;}
 
-.carousel-caption {font-size: 24px;	text-align: left;}
-
-#myAlbum .item { height: 320px; }
+#myAlbum .item { height: 300px; }
 
 #album1 {background: url('images/k/k1.jpg') top center no-repeat;}
 #album2 {background: url('images/k/k2.jpg') top center no-repeat;}
@@ -18,7 +17,7 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 	
-	#myAlbum .item { height: 310px; }
+#myAlbum .item { height: 310px; }
 	
 #album1 {background: url('images/k/k1.jpg') top center no-repeat;}
 #album2 {background: url('images/k/k2.jpg') top center no-repeat;}
@@ -32,15 +31,13 @@
 
 .btn { margin: 0px 0px 50px 0;}
 	.carousel-caption {font-size: 16px;	}
-	
 	.carousel-caption h4 {font-size: 22px;	}
-	
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
 
-	#myAlbum .item { height: 500px; }
+#myAlbum .item { height: 350px; }
 	
 #album1 {background: url('images/k/k1.jpg') top center no-repeat;}
 #album2 {background: url('images/k/k2.jpg') top center no-repeat;}
