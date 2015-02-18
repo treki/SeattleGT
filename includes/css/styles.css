@@ -1,0 +1,99 @@
+
+
+/* -------------Layout------------------ */
+
+#features {	text-align: center;}
+#features img {	margin: 0 0 20px;}
+#inputMessage {	margin-bottom: 15px;}
+footer {background: #333;color: #eee;font-size: 11px;padding: 20px;}
+footer .push { height:4em;}
+
+
+/* -----Typography---------------------- */
+html body{ height:100%;}
+body {	-webkit-font-smoothing: antialiased;text-rendering: optimizelegibility;}
+.well .page-header {margin-top: 0;}
+.well .page-header h1 {	margin-top: 0;}
+ul.unstyled {list-style: none;	padding: 0;}
+.wrapper{ min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -4em;}
+#bigCallout{margin-bottom: 100px;}
+
+/* ----------Navbar--------------------- */
+
+.logo img{ height:auto; width:auto; max-width:120px; max-height:90px; margin: 5px 25px 0px 25px; float: left;}
+img {max-width:350px; max-height:250px; margin: 5px 5px 0px 105px; float: left;}   
+/* -----------carousel--------------- */
+
+#myCarousel {margin-top: 10px;}
+.carousel-caption {	font-size: 24px;}
+.carousel-caption h4 {	font-size: 30px;}
+.carousel-caption h3 {	font-size: 34px;}
+#myCarousel .item { height: 400px; }
+
+#slide1 {background: url('../../images/carousel/carousel_medium_01.jpg') top center no-repeat;}
+#slide2 {background: url('../../images/carousel/carousel_medium_02.jpg') top center no-repeat;}
+#slide3 {background: url('../../images/carousel/carousel_medium_03.jpg') top center no-repeat;}
+#slide4 {background: url('../../images/carousel/carousel_medium_04.jpg') top center no-repeat;}
+#slide5 {background: url('../../images/carousel/carousel_medium_05.jpg') top center no-repeat;}
+#slide6 {background: url('../../images/carousel/carousel_medium_06.jpg') top center no-repeat;}
+
+/* ---------modal------------------- */
+ .modal-content {margin:50px;}
+ .modal-content h4  {margin:20px;}
+ .modal-content address { margin :20px;}
+/* ------------Global Styles------------------- */
+
+.alert {margin-top: 20px;	display: none;}
+.well {	margin: 20px 0;}
+.tabbable img.thumbnail {	margin: 0 20px 10px 0;}
+.thumbnails {margin: 20px 0;}
+.thumbnail {position: relative;}
+.thumbnail h3 {	font-size: 16px;margin: 0 0 10px;line-height: 20px;}
+.thumbnail .price {	font-size: 22px;position: absolute;	top: -10px;	right: -10px;	padding: 10px;}
+.thumbnail .price sup {	font-weight: normal;font-size: 12px;}
+.thumbnail span.glyphicon {	margin-right: 5px;}
+
+/* ----Media Queries------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+	#myCarousel .item { height: 350px; }
+	.thumbnail .price {	font-size: 14px;}
+	.thumbnail .price sup {	font-size: 10px;}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+	#myCarousel .item { height: 410px; }
+	
+	#slide1 {background: url('../../images/carousel/carousel_small_01.jpg') top center no-repeat;}
+	#slide2 {background: url('../../images/carousel/carousel_small_02.jpg') top center no-repeat;}
+	#slide3 {background: url('../../images/carousel/carousel_small_03.jpg') top center no-repeat;}
+	#slide4 {background: url('../../images/carousel/carousel_small_04.jpg') top center no-repeat;}
+	#slide5 {background: url('../../images/carousel/carousel_small_05.jpg') top center no-repeat;}
+	#slide6 {background: url('../../images/carousel/carousel_small_06.jpg') top center no-repeat;}
+
+
+	.carousel-caption {	font-size: 16px;}
+	.carousel-caption h4 {	font-size: 22px;}
+	.logo img{height:auto; width:auto; max-width:160px; max-height:130px; margin: 5px 5px 0px 280px;  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	#myCarousel .item { height: 450px; }
+	
+	#slide1 {background: url('../../images/carousel/carousel_large_01.jpg') top center no-repeat;}
+	#slide2 {background: url('../../images/carousel/carousel_large_02.jpg') top center no-repeat;}
+	#slide3 {background: url('../../images/carousel/carousel_large_03.jpg') top center no-repeat;}
+	#slide4 {background: url('../../images/carousel/carousel_large_04.jpg') top center no-repeat;}
+	#slide5 {background: url('../../images/carousel/carousel_large_05.jpg') top center no-repeat;}
+	#slide6 {background: url('../../images/carousel/carousel_large_06.jpg') top center no-repeat;}
+}
+}
+
+
+
