@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Gallery SeattlegtRemodeling</title>
+    <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="code.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+			
+  </head>
+  <style>
+      ul {  padding: 15px ; margin:0 0 0 0;  }
+      ul li {  list-style:none; margin-bottom:25px; }
+      ul li img { cursor: pointer;   }
+      .modal-body {  padding:5px !important;    }
+      .modal-content {border-radius:0;  }
+      .modal-dialog img { text-align:center;  margin:0 auto;   }
+    .controls{          
+        width:50px;
+        display:block;
+        font-size:15px;
+        padding-top:5px;
+        font-weight:bold;   }
+    .next { float:right;  text-align:right;   }
+	
+      /*override modal for demo only*/
+      .modal-dialog {
+          max-width:500px;
+          padding-top: 90px;
+      }
+      @media screen and (min-width: 768px){
+          .modal-dialog {
+              width:500px;
+              padding-top: 90px;
+          }         
+       }
+
+      @media screen and (max-width:1500px){
+          #ads {
+              display:none;
+          }
+      }
+  </style>
+    <body>    
+  <body>
+
+    </div>
+ <div class="container" style="margin-top:10px">
+      <div class="row" id="bigCallout">
+    <div class="col-12" >
+      <div class="well" >
+        <div class="page-header" style="margin-top:10px">
+        
+          <a href="home.html"><img src="logoSeattleGTRemodeling6.png" alt="logo" width="30%"></a><h3>Remodeling Kitchen Images</h3>
+              <p>Please take a look at my previous works from the past. I have been doing this for 15 + years. Give me a call anytime or feel free to fill out the contact me form.</p>
+              </div>
+
+        <ul class="row">
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="galleryImages/kitchen/image (1).jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="galleryImages/kitchen/image (2).jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+              <img class="img-responsive" src="galleryImages/kitchen/image (3).jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="galleryImages/kitchen/image (4).jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="galleryImages/kitchen/image (32).jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="galleryImages/kitchen/image (6).jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="galleryImages/kitchen/image (7).jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="galleryImages/kitchen/image (8).jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+              <img class="img-responsive" src="galleryImages/image (9).jpg">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+              <img class="img-responsive" src="galleryImages/image (10).jpg">
+            </li>
+          </ul>             
+    </div> <!-- /container -->
+   </div>
+   </div>
+   </div>
+   </div>
+
+    
+     
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">         
+          <div class="modal-body">                
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+  </body>
+  
+  <script>
+        $(document).ready(function(){        
+            $('li img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                
+                //start of new code new code
+                var index = $(this).parent('li').index();   
+                
+                var html = '';
+                html += img;                
+                html += '<div style="height:25px;clear:both;display:block;">';
+                html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
+                html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
+                html += '</div>';
+                
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(html);
+                    //new code
+                    $('a.controls').trigger('click');
+                })
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+                
+                
+                
+                
+           });
+        
+        })
+        
+        //new code
+        $(document).on('click', 'a.controls', function(){
+            var index = $(this).attr('href');
+            var src = $('ul.row li:nth-child('+ index +') img').attr('src');             
+            
+            $('.modal-body img').attr('src', src);
+            
+            var newPrevIndex = parseInt(index) - 1; 
+            var newNextIndex = parseInt(newPrevIndex) + 2; 
+            
+            if($(this).hasClass('previous')){               
+                $(this).attr('href', newPrevIndex); 
+                $('a.next').attr('href', newNextIndex);
+            }else{
+                $(this).attr('href', newNextIndex); 
+                $('a.previous').attr('href', newPrevIndex);
+            }
+            
+            var total = $('ul.row li').length + 1; 
+            //hide next button
+            if(total === newNextIndex){
+                $('a.next').hide();
+            }else{
+                $('a.next').show()
+            }            
+            //hide previous button
+            if(newPrevIndex === 0){
+                $('a.previous').hide();
+            }else{
+                $('a.previous').show()
+            }
+            
+            
+            return false;
+        });
+        
+         
+        
+    </script>
+</html>

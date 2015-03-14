@@ -38,14 +38,14 @@
 									<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <strong class="caret"></strong></a>
 					
 					<ul class="dropdown-menu">
-					<li><a href="kitchen.html">Kitchen Remodel</a></li>
-					<li><a href="bathroom.html">Bathroom Remodel</a></li>
-					<li><a href="floor.html">Flooring</a></li>
-					<li><a href="special.html">Special Project</a></li>
+					<li><a href="galleryKit.html" target="blank">Kitchen Gallery</a></li>
+					<li><a href="galleryBath.html" target="blank">Bathroom Gallery</a></li>
+					<li><a href="floor.html" target="blank">Flooring</a></li>
+					<li><a href="galleryOther.html" target="blank">Special Project</a></li>
 						<li class="divider"></li>
 							<li class="dropdown-header">More Services</li>
-							<li><a href="contact.html">Contact Us</a></li>
-							<li><a href="qa.html">Q&A</a></li>
+							<li><a href="contact.html" target="blank">Contact Us</a></li>
+							<li><a href="qa.html" target="blank">Q&A</a></li>
 								</ul><!--end dropdpwn-menu-->
 									</li>
 										</ul>
@@ -58,26 +58,44 @@
 							<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
 							<li data-slide-to="1" data-target="#myCarousel"></li>
 							<li data-slide-to="2" data-target="#myCarousel"></li>
+							<li data-slide-to="3" data-target="#myCarousel"></li>
+							<li data-slide-to="4" data-target="#myCarousel"></li>
+							<li data-slide-to="5" data-target="#myCarousel"></li>
+							<li data-slide-to="6" data-target="#myCarousel"></li>
 						</ol>
 	<!-- Wrapper for slides -->
-	<div class="carousel-inner">
-		<div class="item active" id="slide6">
+<div class="carousel-inner">
+		<div class="item active" id="slide4">
 			<div class="carousel-caption">
-				<h4>Seattle GT Remodel</h4>
+				<p>A Home Improvement Company</p>
 					</div><!-- end carousel-caption-->
 						</div><!-- end item -->
-		<div class="item" id="slide4">
-			<div class="carousel-caption">
-				<h4>Fresh Bathroom</h4>
-					</div><!-- end carousel-caption-->
-						</div><!-- end item -->
-		
-		<div class="item" id="slide5">
-			<div class="carousel-caption">
-				<h4>A Home Improvement Company</h4>
-					</div><!-- end carousel-caption-->
-						</div><!-- end item -->
-							</div><!-- carousel-inner -->
+	<div class="item" id="slide2">
+		<div class="carousel-caption">
+			<h4>Update your Kitchen</h4>
+				</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+	<div class="item" id="slide3">
+		<div class="carousel-caption">
+			<h4>Fresh Bathroom</h4>
+				</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+	<div class="item" id="slide1">
+		<div class="carousel-caption">
+			<h4>Beautiful Designs</h4>
+				</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+	<div class="item" id="slide5">
+		<div class="carousel-caption">
+			<h4>Modern Kitchens</h4>
+				</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+	<div class="item" id="slide6">
+		<div class="carousel-caption">
+			<h4>Granite Countertop</h4>
+				</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+						</div><!-- carousel-inner -->
 		<!-- Controls -->
 		<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
 	<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
@@ -107,6 +125,7 @@
  		</div>
 	</div><!--end well small-->
 	</div>
+
 <!--FORM-->
    <div class="container">
   <div class="row" id="bigCallout">
@@ -115,43 +134,25 @@
 					<div class="page-header">
 
       <h2>Tell us about your project...</h2>
-     	 <form role="form">
-    	 	<div class="form-group">
-         		<label for="name">Name:</label>
-        			<input type="text" class="form-control" id="name" placeholder="Enter your name">
-      					 </div>
-       				<div class="form-group">
-         		 <label for="email">Email:</label>
-        	 <input type="email" class="form-control" id="email" placeholder="Enter your email">
-        </div>
-     	 <form role="form">
-    	 	<div class="form-group">
-         		<label for="name">Address:</label>
-        			<textarea class="form-control" rows="2" id="address" placeholder="Enter your location"></textarea>
-						</div>
-					<div class="form-group">
-		 		 <label for="message">About your Project</label>
-		 	 <textarea class="form-control" rows="5" id="message" placeholder="Tell us about your project"></textarea>
-		</div>
-    		<p>Check all that apply:</p>
-				<form role="form">
-    				<div class="checkbox">
-   	  					 <label><input type="checkbox" value="">Kitchen Remodeling</label>
-   							 </div>
-  						 <div class="checkbox">
-   	  				<label><input type="checkbox" value="">Bathroom Remodeling</label>
-  				</div>
-    	 <div class="checkbox">
-     <label><input type="checkbox" value="">Flooring</label>
-  </div>
-    <div class="checkbox">
-    	<label><input type="checkbox" value="">Other</label>
-    		</div>
-    			<hr> <!--Submit button needs PHP?-->
-		      	  <button type="button" class="btn btn-primary" onclick="window.location.href='mailto: tuya.senff@gmail.com'">Submit</button>
+     	 <form role="form" name="estimate_request" method="post" action="emailform.php">
+    	 	<div class="form-group"> <label for="name">Name:</label>
+        			<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"> </div>
+
+			<div> <label for="email">Email:</label>
+        			 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"></div>
+
+          	<div><label for="name">Phone:</label>
+        			<textarea class="form-control" rows="1" id="phone" name="phone" placeholder="Enter your Phone Number"></textarea></div>	
+
+			<div> <label for="message">About your Project</label>
+		 	 		<textarea class="form-control" rows="5" id="message" name="message" placeholder="Tell us about your project"></textarea></div>
+    						
+    			<hr> <!--Submit button needs PHP?--> <!--deleted button for php purposes-->
+		      	  <input type="submit" name="submit">
 		     		 </form>
 		  				  </div>
 						<!--end FORM-->
+
 					</div><!--end page Header-->
 				<div class="carousel slide" id="myAlbum">
 				<!-- Wrapper for slides -->
