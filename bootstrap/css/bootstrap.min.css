@@ -18,7 +18,7 @@ b,strong{font-weight:bold}dfn{font-style:italic}
 hr{height:0;-moz-box-sizing:content-box;box-sizing:content-box}
 mark{color:#000;background:#ff0}
 code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}
-pre{white-space:pre-wrap}
+pre{white-space:pre-wrap}fd
 q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}
 sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}
 img{border:0}
@@ -62,7 +62,7 @@ a.list-group-item:hover,a.list-group-item:focus{text-decoration:none;background-
 .nav-tabs .dropdown-menu{margin-top:-1px;border-top-right-radius:0;border-top-left-radius:0}
 
 
-.navbar{position:relative;min-height:50px;padding-right:15px;padding-left:15px;margin-bottom:20px;background-color:#E5C107;border-radius:4px;} /*yellow background E5C107*/
+.navbar{position:relative;min-height:50px;padding-right:15px;padding-left:15px;margin-bottom:20px;background-color:#E5C107;border-radius:4px;} /*background white FFFFFF*/
 .navbar:before,.navbar:after{display:table;content:" "}
 .navbar:after{clear:both}
 .navbar:before,.navbar:after{display:table;content:" "}
