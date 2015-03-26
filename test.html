@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html  lang="en">
@@ -10,9 +11,36 @@
 		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
 		<!-- Custom CSS -->
 		<link href="includes/css/styles.css" rel="stylesheet">
-		<link href="includes/css/sticky-footer-navbar.css" rel="stylesheet">
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+	
+
+		 <script type="text/javascript">
+            function showImage(imgName) {
+                document.getElementById('largeImg').src = imgName;
+                showLargeImagePanel();
+                unselectAll();
+            }
+            function showLargeImagePanel() {
+                document.getElementById('largeImgPanel').style.visibility = 'visible';
+            }
+            function unselectAll() {
+                if(document.selection) document.selection.empty();
+                if(window.getSelection) window.getSelection().removeAllRanges();
+            }
+            function hideMe(obj) {
+                obj.style.visibility = 'hidden';
+            }
+        </script>
+ 
+        <style type="text/css">
+            #largeImgPanel {
+                text-align: center;
+                visibility: hidden;
+                position: fixed;
+                z-index: 100;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background-color: rgba(100,100,100, 0.5);
+            }
+        </style>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -54,55 +82,7 @@
 				</div><!--end container-->
 			</div><!-- end navbar -->
 			
-		<div class="carousel slide" id="myCarousel">
-	<!-- Mini circle Nav's-->
-	<ol class="carousel-indicators">
-		<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-		<li data-slide-to="1" data-target="#myCarousel"></li>
-		<li data-slide-to="2" data-target="#myCarousel"></li>
-		<li data-slide-to="3" data-target="#myCarousel"></li>
-		<li data-slide-to="4" data-target="#myCarousel"></li>
-		<li data-slide-to="5" data-target="#myCarousel"></li>
-	</ol>
-	<!-- Wrapper for slides -->
-	<div class="carousel-inner">
-		<div class="item active" id="slide1">
-			<div class="carousel-caption">
-				<p>A Home Improvement Company</p>
-					</div><!-- end carousel-caption-->
-						</div><!-- end item -->
-	<div class="item" id="slide2">
-		<div class="carousel-caption">
-			<h4>Update your Kitchen</h4>
-				</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-	<div class="item" id="slide3">
-		<div class="carousel-caption">
-			<h4>Fresh Bathroom</h4>
-				</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-	<div class="item" id="slide4">
-		<div class="carousel-caption">
-			<h4>Beautiful Designs</h4>
-				</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-	<div class="item" id="slide5">
-		<div class="carousel-caption">
-			<h4>Modern Kitchens</h4>
-				</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-	<div class="item" id="slide6">
-		<div class="carousel-caption">
-			<h4>Granite Countertop</h4>
-				</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-						</div><!-- carousel-inner -->
-
-	<!-- Controls -->
-		<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
-		<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
-	</div><!-- end myCarousel -->
-
+		
 <!--Visable only on small devices-->
 		
 <div class="well well-small visible-sm">
@@ -129,14 +109,21 @@
 	</div><!--end well small-->
 </div>
 
-	<div class="row" id="bigCallout">
-		<div class="col-12">
-			<div class="well">
-				<div class="page-header">
-				
-					<h3>Welcome to Seattle GT Remodeling LLC</h3>
-						</div><!--end page Header-->
-							<p class="lead"> Seattle GT Remodeling has over 15 years of experience, specializing in commercial and residential remodeling. We&apos;ve partnered with many other contractors including BrekusTile Inc. , Inspector Handyman LLC and Tile For Less. We are always ready to tackle your project big or small..</p> </div>
+
+        <p>Click on any image thumbnail to enlarge... then click again to hide it</p>
+ 
+        <img src="gallery/kitchen/imagek1.jpg" style="cursor:pointer" onclick="showImage('gallery/kitchen/imagek2.jpg');" />
+        <img src="gallery/kitchen/imagek1.jpg" style="cursor:pointer" onclick="showImage('gallery/kitchen/imagek2.jpg');" />
+        <img src="gallery/kitchen/imagek1.jpg" style="cursor:pointer" onclick="showImage('gallery/kitchen/imagek2.jpg');" />
+        <img src="gallery/kitchen/imagek1.jpg" style="cursor:pointer" onclick="showImage('gallery/kitchen/imagek2.jpg');" />
+        <img src="gallery/kitchen/imagek1.jpg" style="cursor:pointer" onclick="showImage('gallery/kitchen/imagek2.jpg');" />
+ 
+        <div id="largeImgPanel" onclick="hideMe(this);">
+            <img id="largeImg" style="height: 100%; margin: 0; padding: 0;" />
+        </div>
+   
+
+
 
 <!-- pop up contatc us Small modal -->
 <div class="container" id="row">
@@ -166,8 +153,8 @@
 			</div><!-- end row -->
 		</div><!-- end container -->
 	<div class="push"></div> 
-	<div class="footer">
-<footer>
+	
+<footer class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2">
@@ -215,4 +202,21 @@
 	
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
