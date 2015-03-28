@@ -77,16 +77,16 @@ html body{height: 100%; margin-top: 80px;}
 
 .carousel-caption {	font-size: 16px;}
 .carousel-caption h4 {font-size: 22px; }
-
+.poition-img-inner img { width:25%;}
 }
 
 
 /* SMARTPHONE Portrait & landscape phone */
 @media only screen (min-device-width : 320px) and (max-device-width: 480px) {
-#myCarousel .item { height: 350px; }
+#myCarousel .item { height: 500px; }
 
 body{margin-top: 5px;}
-	
+
 
 
 
