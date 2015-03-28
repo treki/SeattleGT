@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html  lang="en">
+<head>
+  <title>Welcome to Seattle GT Remodeling</title>
+  <!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="includes/css/styles.css" rel="stylesheet">
+  <link href="includes/css/sticky-footer-navbar.css" rel="stylesheet">
+  <!-- Include Modernizr in the head, before any other Javascript -->
+  <script src="includes/js/modernizr-2.6.2.min.js"></script>
+  
+<script type="text/javascript">
+    function showImage(imgName) {
+        document.getElementById('largeImg').src = imgName;
+        showLargeImagePanel();
+        unselectAll();
+    }
+    function showLargeImagePanel() {
+        document.getElementById('largeImgPanel').style.visibility = 'visible';
+    }
+    function unselectAll() {
+        if(document.selection) document.selection.empty();
+        if(window.getSelection) window.getSelection().removeAllRanges();
+    }
+    function hideMe(obj) {
+        obj.style.visibility = 'hidden';
+    }
+</script>
+
+<style type="text/css">
+    #largeImgPanel {
+        text-align: center;
+        visibility: hidden;
+        position: fixed;
+        z-index: 100;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-color: rgba(100,100,100, 0.5);
+
+
+    }
+
+    #padded-img > img {
+        padding: 5px;
+    }
+</style>
+
+
+</head>
+<body>
+  <div class="wrapper">
+      <div class="container" id="main">
+         <div class="navbar navbar-fixed-top">
+            <div class="container">
+               <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <div class="position-img-outer">
+                <div class="position-img-inner">
+                    <img src="logo3.png" class="position-img" alt="img" style=" height:75px; " />
+                </div>
+            </div>
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+             <ul class="nav navbar-nav">
+                <li>
+                   <a href="home.html">Home</a></li>
+                   <li class="active">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <strong class="caret"></strong></a>
+                       <ul class="dropdown-menu">
+                         <li class="dropdown-header">Previous Work</li>
+                         <li><a href="gallerykit.html" target="blank">Kitchen Gallery</a></li>
+                         <li><a href="gallerybath.html" target="blank">Bathroom Gallery</a></li>
+                         <li><a href="galleryspecial.html" target="blank">Special Projects</sub></a></li>
+                     </ul> 
+                     <li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <strong class="caret"></strong></a>
+                       <ul class="dropdown-menu">  
+                           <li class="dropdown-header">Get In Touch</li>
+                           <li><a href="contact.html" target="blank">Contact Us</a></li>
+                           <li><a href="qa.html" target="blank">Q&A</a></li>
+                       </ul><!--end dropdpwn-menu-->
+                   </li>
+               </ul>
+           </div><!--end nav-collapse-->
+       </div><!--end container-->
+   </div><!-- end navbar -->
+
+</li>
+</ul>
+</div>
+</div>
+<div class="gallery-padding">
+   <h3>Special Projects</h3>
+   <p>We do all sorts of special projects from adding rooms to installing hard wood floors.</p>
+   <p>See some of our previous work below.</p>
+
+    <div id="padded-img">
+      <img src="gallery/special/images1-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images1.jpg');" />
+      <img src="gallery/special/images2-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images2.jpg');" />
+      <img src="gallery/special/images3-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images3.jpg');" />
+      <img src="gallery/special/images5-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images5.jpg');" />
+      <img src="gallery/special/images6-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images6.jpg');" />
+      <img src="gallery/special/images8-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images8.jpg');" />
+      <img src="gallery/special/images9-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images9.jpg');" />
+      <img src="gallery/special/images10-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images10.jpg');" />
+      <img src="gallery/special/images11-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images11.jpg');" />
+      <img src="gallery/special/images12-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images12.jpg');" />
+      <img src="gallery/special/images13-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images13.jpg');" />
+      <img src="gallery/special/images14-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images14.jpg');" />
+      <img src="gallery/special/images15-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images15.jpg');" />
+      <img src="gallery/special/images16-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images16.jpg');" />
+      <img src="gallery/special/images17-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images17.jpg');" />
+      <img src="gallery/special/images18-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images18.jpg');" />
+      <img src="gallery/special/images19-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images19.jpg');" />
+      <img src="gallery/special/images20-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images20.jpg');" />
+      <img src="gallery/special/images21-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images21.jpg');" />
+      <img src="gallery/special/images22-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images22.jpg');" />
+      <img src="gallery/special/images23-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images23.jpg');" />
+      <img src="gallery/special/images24-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images24.jpg');" />
+      <img src="gallery/special/images25-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images25.jpg');" />
+      <img src="gallery/special/images26-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images26.jpg');" />
+      <img src="gallery/special/images27-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images27.jpg');" />
+      <img src="gallery/special/images28-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images28.jpg');" />
+      <img src="gallery/special/images29-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images29.jpg');" />
+      <img src="gallery/special/images30-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images30.jpg');" />
+      <img src="gallery/special/images31-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images31.jpg');" />
+      <img src="gallery/special/images32-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images32.jpg');" />
+      <img src="gallery/special/images33-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images33.jpg');" />
+      <img src="gallery/special/images34-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images34.jpg');" />
+      <img src="gallery/special/images35-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images35.jpg');" />
+      <img src="gallery/special/images36-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images36.jpg');" />
+      <img src="gallery/special/images37-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images37.jpg');" />
+      <img src="gallery/special/images38-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images38.jpg');" />
+      <img src="gallery/special/images39-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images39.jpg');" />
+      <img src="gallery/special/images40-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images40.jpg');" />
+      <img src="gallery/special/images41-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images41.jpg');" />
+      <img src="gallery/special/images42-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images42.jpg');" />
+      <img src="gallery/special/images43-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images43.jpg');" />
+      <img src="gallery/special/images44-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images44.jpg');" />
+      <img src="gallery/special/images45-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images45.jpg');" />
+      <img src="gallery/special/images46-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images46.jpg');" />
+      <img src="gallery/special/images47-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/imagesb47.jpg');" />
+      <img src="gallery/special/images48-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images48.jpg');" />
+      <img src="gallery/special/images49-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images49.jpg');" />
+      <img src="gallery/special/images50-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images50.jpg');" />
+      <img src="gallery/special/images51-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images51.jpg');" />
+      <img src="gallery/special/images52-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images52.jpg');" />
+      <img src="gallery/special/images53-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images53.jpg');" />
+      <img src="gallery/special/images54-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images54.jpg');" />
+      <img src="gallery/special/images55-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images55.jpg');" />
+      <img src="gallery/special/images56-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images56.jpg');" />
+      <img src="gallery/special/images57-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images57.jpg');" />
+      <img src="gallery/special/images58-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images58.jpg');" />
+      <img src="gallery/special/images59-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images59.jpg');" />
+      <img src="gallery/special/images60-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images60.jpg');" />
+      <img src="gallery/special/images61-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images61.jpg');" />
+      <img src="gallery/special/images62-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images62.jpg');" />
+      <img src="gallery/special/images63-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images63.jpg');" />
+      <img src="gallery/special/images64-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images64.jpg');" />
+      <img src="gallery/special/images65-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images65.jpg');" />
+      <img src="gallery/special/images66-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images66.jpg');" />
+      <img src="gallery/special/images67-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images67.jpg');" />
+      <img src="gallery/special/images68-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images68.jpg');" />
+      <img src="gallery/special/images69-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images69.jpg');" />
+      <img src="gallery/special/images70-s.jpg" style="cursor:pointer" onclick="showImage('gallery/special/images70.jpg');" />
+  </div>
+
+  <div id="largeImgPanel" onclick="hideMe(this);">
+    <img id="largeImg" style="height: 75%; margin: 150px 0 0 0; padding: 0;" />
+</div>
+</div>
+
+
+
+<div class="footer">
+    <footer>
+       <div class="container">
+          <div class="row">
+             <div class="col-sm-2">
+                <h6>Copyright &copy; 2015 - All Rights Reserved </h6>
+            </div><!-- end col-sm-2 -->
+            <div class="col-sm-4">
+             <h6>About Us</h6>
+             <p>Seattle GT Remodelling is owned and operated by Ganbold Tsedendamba.</p>
+         </div><!-- end col-sm-4 -->
+
+         <div class="col-sm-2">
+          <ul class="unstyled">
+           <li><a href="home.html">Home</a></li>
+           <li><a href="contact.html">Contact</a></li>
+       </ul>
+   </div><!-- end col-sm-2 -->	
+   <div class="col-sm-2">
+      <ul class="unstyled">
+
+         <li><a href="https://www.facebook.com/SeattleGTRemodelingLLC"><img src="images/facebook.jpg" width="25px"></li>
+     </ul>
+ </div><!-- end col-sm-2 -->
+ <div class="col-sm-2">
+ </div><!-- end col-sm-2 -->
+</div><!-- end row -->
+</div><!-- end container -->
+</footer>	
+
+<!-- First try for the online version of jQuery-->
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<!-- If no online access, fallback to our hardcoded version of jQuery -->
+<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script src="includes/js/script.js"></script>
+<script src="includes/js/modernizr-2.6.2.min.js"></script>
+<script src="includes/js/jquery-1.8.2.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script><!--main CSS for NAV-->
+
+
+</body>
+</html>
+

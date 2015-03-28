@@ -1,0 +1,11 @@
+.navigation li {float: left; text-align:center; display: inline;  padding:13px; margin:0 0 0 0;}
+h3{margin-top: 225px;}
+.navigation a{
+     color: #FFFFFF;
+     text-decoration:none;
+}
+
+navigation a:hover {
+    color: red;
+
+}
